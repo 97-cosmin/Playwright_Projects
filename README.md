@@ -45,6 +45,7 @@ If you want to run specific tests or files, you can provide the test file path a
 ## **7. Capture Screenshots on Test Failure** ✅
 
 Playwright is configured to automatically capture screenshots whenever a test fails.
+
 📍 Location in Code: playwright.config.ts → use: { screenshot: 'only-on-failure', screenshotPath: './screenshots', }
 
 Captured screenshots are stored in the screenshots/ directory, making it easier to debug failed tests.
@@ -55,12 +56,14 @@ Captured screenshots are stored in the screenshots/ directory, making it easier 
      },
 ## **8. HTML Test Report Generation** ✅
 Playwright automatically generates an HTML test report after running the tests. The report provides a detailed summary of test execution.
+
 📍 Location in Code: playwright.config.ts → reporter: 'html'
 
         reporter: 'html',
 
 ## **9. Cross-Browser Testing** ✅
 The tests are configured to run on multiple browsers to ensure compatibility. The following browsers are included in the Playwright configuration (playwright.config.ts):
+
 📍 Location in Code: playwright.config.ts → projects: [...]
      ✔ Chromium (Google Chrome)
      ✔ Firefox
@@ -88,14 +91,17 @@ The tests are configured to run on multiple browsers to ensure compatibility. Th
 
 ## 10. Using Playwright with TypeScript ✅
 The project uses TypeScript for writing Playwright tests.
+
 📍 Location in Code: The test files are stored in the tests/ folder and have a .ts extension.
 
 ## 11. Passing Configuration Settings as Environment Variables ✅
 The project supports passing configuration settings like the Application URL via environment variables.
+
 📍 Location in Code: `tests/` Uses `process.env.WD_URL`
 
 ## 12. Implementation of Page Object Model ✅
 The project follows the Page Object Model (POM) to separate UI logic from test scripts.
+
 📍 Location in Code: Page objects are stored in src/ directory. 
 
 Example: **https://github.com/97-cosmin/Playwright_Projects/blob/main/src/WDLandingPage.ts**
