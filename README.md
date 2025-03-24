@@ -117,6 +117,18 @@ The project follows the Page Object Model (POM) to separate UI logic from test s
 
 Example: **https://github.com/97-cosmin/Playwright_Projects/blob/main/src/WDLandingPage.ts**
 
+
+## 💬 Feedback on the Assignment
+
+I have provided detailed feedback based on the assignment I completed. You can review the feedback in the following document:
+
+[Feedback on the Assignment](https://github.com/97-cosmin/Playwright_Projects/blob/main/Feedback.md)
+
+The feedback includes insights on challenges faced, solutions implemented, and suggestions for improvements. This document can be helpful for understanding the decisions made throughout the process and the improvements I suggest for better automation in future tasks.
+
+🔍 **Take a look for a deeper understanding of the work done and areas for improvement!**
+
+
 ## ✅ Summary of Completed Requirements:  
 
 | Requirement                                        | Status  | 📍 Location in Code |
