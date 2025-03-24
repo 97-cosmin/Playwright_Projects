@@ -24,8 +24,10 @@ Navigate to the project directory and run the following command to install the r
 
 This will install all necessary packages, including Playwright.
 
-4. Run Tests
-After installing the dependencies, you can run the tests using the following command:
+4. Run Tests in Headless Mode
+By **default**, Playwright runs tests in headless mode, meaning the browser runs in the background without a visible UI. This makes tests run faster and is useful for CI/CD pipelines.
+
+To execute tests in headless mode, use:
 
        npx playwright test
 
