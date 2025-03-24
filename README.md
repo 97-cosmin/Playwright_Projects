@@ -1,7 +1,8 @@
 # Playwright_Projects
 
 Instructions to Run Tests
-To run the automated tests for this project using Playwright, follow the steps below:.
+
+To run the automated tests for this project using Playwright, follow the steps below:
 
 ## 1. Install Node.js and NPM ✅
 
@@ -60,6 +61,13 @@ Playwright automatically generates an HTML test report after running the tests. 
 📍 Location in Code: playwright.config.ts → reporter: 'html'
 
         reporter: 'html',
+## Test Reports Backup
+
+I have created a backup of all the reports for the tests I have run. You can find the backup reports in the following directory:
+
+[BackUp Reports](https://github.com/97-cosmin/Playwright_Projects/tree/main/BackUp_Reports)
+
+These reports include detailed results from each test execution and can be referenced for review or debugging purposes.
 
 ## **9. Cross-Browser Testing** ✅
 The tests are configured to run on multiple browsers to ensure compatibility. The following browsers are included in the Playwright configuration (playwright.config.ts):
