@@ -1,5 +1,6 @@
-Feedback for the automation exercise:
+### Feedback for the automation exercise:
 
+### For TASK1
 I faced difficulties when trying to access the "Update" button on the landing page. The issue was that the button didn’t have a unique ID, and another button in the account name section shared the same ID. As a result, I had trouble selecting the correct button.
 
 I tried several approaches using DevTools, but none worked. For example, I used the "Copy selector" option, but it didn't work due to the ID conflict. I also tried fdprocessedid and "Copy JS path," but these didn't work either.
@@ -13,3 +14,19 @@ To make automation easier in the future, it would help if the system:
 Assigns unique IDs to important buttons for easier identification.
 
 Avoids duplicating IDs on the page, ensuring each element can be uniquely targeted.
+
+### For TASK2
+
+I faced some difficulty accessing the "No data found" message when there were no search results. While I did find the selector for the message, it wasn’t straightforward due to the page’s dynamic nature and the structure of the elements, which made it harder to pinpoint the exact location of the message.
+
+I initially tried different approaches using DevTools and various selectors, but they didn’t work smoothly because of inconsistent page loading and overlapping elements.
+
+Eventually, I was able to implement a reliable solution by adding a function that checks for the "No data found" message and ensures that the results list is empty. This resolved the issue, and the test now handles invalid search cases correctly.
+
+Suggestions for improvement:
+
+It would help if the "No data found" message had a more consistent or unique selector for easier access in automated tests.
+
+A more stable page structure could reduce the complexity of finding specific elements like error messages or empty results.
+
+Improving page load synchronization could help avoid delays and make automated tests more reliable.
