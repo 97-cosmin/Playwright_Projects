@@ -13,7 +13,7 @@ test.describe('Country Filter Functionality', () => {
 
         console.log('Verifying meetings for Belgium...');  // Success message
         // Verify if all meetings are for Belgium
-        const result = await landingPage.verifyMeetingsCountry('Germany');
+        const result = await landingPage.verifyMeetingsCountry('Belgium');
         expect(result).toBe(true);
         console.log('Test passed, all meetings are for Belgium!');  // Success message
     });
