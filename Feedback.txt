@@ -1,32 +1,60 @@
-### Feedback for the automation exercise:
+Feedback for the Automation Exercise
+TASK 1: Update Button Issue
+Problem:
 
-### For TASK1
-I faced difficulties when trying to access the "Update" button on the landing page. The issue was that the button didn’t have a unique ID, and another button in the account name section shared the same ID. As a result, I had trouble selecting the correct button.
+I faced difficulties when trying to access the "Update" button on the landing page.
 
-I tried several approaches using DevTools, but none worked. For example, I used the "Copy selector" option, but it didn't work due to the ID conflict. I also tried fdprocessedid and "Copy JS path," but these didn't work either.
+The issue was caused by the button not having a unique ID.
 
-In the end, I added an extra condition to differentiate the "Update" button based on its classes. The active button had a different class compared to the disabled one, which allowed me to correctly identify and select the button.
+Another button in the account name section shared the same ID, causing a conflict and making it difficult to select the correct button.
 
-Suggestions for improvement:
+Approach:
 
-To make automation easier in the future, it would help if the system:
+I tried several approaches using DevTools to find the correct selector:
 
-Assigns unique IDs to important buttons for easier identification.
+Tried the "Copy selector" option but it didn’t work due to the ID conflict.
 
-Avoids duplicating IDs on the page, ensuring each element can be uniquely targeted.
+Tried using fdprocessedid and "Copy JS path," but these also didn’t work.
 
-### For TASK2
+Solution:
 
-I faced some difficulty accessing the "No data found" message when there were no search results. While I did find the selector for the message, it wasn’t straightforward due to the page’s dynamic nature and the structure of the elements, which made it harder to pinpoint the exact location of the message.
+I added an extra condition to differentiate the "Update" button based on its classes:
 
-I initially tried different approaches using DevTools and various selectors, but they didn’t work smoothly because of inconsistent page loading and overlapping elements.
+The active button had a different class compared to the disabled one.
 
-Eventually, I was able to implement a reliable solution by adding a function that checks for the "No data found" message and ensures that the results list is empty. This resolved the issue, and the test now handles invalid search cases correctly.
+This allowed me to correctly identify and select the button.
 
-Suggestions for improvement:
+Suggestions for Improvement:
 
-It would help if the "No data found" message had a more consistent or unique selector for easier access in automated tests.
+Unique IDs: Assign unique IDs to important buttons for easier identification.
 
-A more stable page structure could reduce the complexity of finding specific elements like error messages or empty results.
+No Duplicate IDs: Avoid duplicating IDs on the page to ensure each element can be uniquely targeted.
 
-Improving page load synchronization could help avoid delays and make automated tests more reliable.
+TASK 2: No Data Found Message
+Problem:
+
+I had difficulty accessing the "No data found" message when there were no search results.
+
+The selector for the message was found, but accessing it wasn’t straightforward due to the page’s dynamic structure and overlapping elements.
+
+Approach:
+
+I initially tried different methods using DevTools and selectors, but they didn’t work smoothly due to:
+
+Inconsistent page loading.
+
+Overlapping elements that complicated pinpointing the exact location of the message.
+
+Solution:
+
+I implemented a function that checks for the "No data found" message and ensures that the results list is empty.
+
+This resolved the issue, and the test now correctly handles invalid search cases.
+
+Suggestions for Improvement:
+
+Consistent Selectors: The "No data found" message should have a more consistent or unique selector for easier access in automated tests.
+
+Stable Page Structure: A more stable page structure could help reduce the complexity of finding elements like error messages or empty results.
+
+Page Load Synchronization: Improving page load synchronization could help avoid delays and make automated tests more reliable.
