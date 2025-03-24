@@ -3,7 +3,7 @@
 Instructions to Run Tests
 To run the automated tests for this project using Playwright, follow the steps below:.
 
-**1. Install Node.js and NPM** ✅
+#### **1. Install Node.js and NPM** ✅
 
 Ensure you have Node.js and NPM (Node Package Manager) installed. You can check if they are installed by running the following commands in your terminal:
 
